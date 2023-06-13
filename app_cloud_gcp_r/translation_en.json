@@ -1,0 +1,26 @@
+{
+  "cultural_date_format": "%d-%m-%Y",
+  "languages": ["es", "en"],
+  "translation": [
+    {
+     "es": "App_cloud_gcp_r",
+     "en": "App_cloud_gcp_r"
+     },
+     {
+     "es": "Inicio",
+     "en": "Home"
+     },
+     {
+     "es": "Analisis de datos Bigquery",
+     "en": "Data Analysis Bigquery"
+     },
+     {
+     "es": "Este es un modulo para analisis de datos del servicio Bigquery",
+     "en": "This is a module for data analysis of the Bigquery service"
+     },
+     {
+     "es": "Datos de set de datos 1",
+     "en": "Data from data set 1"
+     }
+  ]
+}
