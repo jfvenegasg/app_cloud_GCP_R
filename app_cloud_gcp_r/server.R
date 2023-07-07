@@ -10,7 +10,7 @@
 library(shiny)
 # Define server logic required to draw a histogram
 function(input, output, session) {
-  project_id <- "shiny-apps-385622"
+  project_id <- "apps-392022"
   
   sql<-"SELECT subscriber_type,bikeid,start_time,start_station_name,end_station_name,duration_minutes from `bigquery-public-data.austin_bikeshare.bikeshare_trips` LIMIT 100"
   

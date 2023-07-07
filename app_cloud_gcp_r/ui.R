@@ -27,7 +27,7 @@ library(bigrquery)
 library(echarts4r)
 source("traductor.R")
 
-bigrquery::bq_auth(path ="shiny-apps-385622-08e5b9820326.json")
+bigrquery::bq_auth(path ="apps-392022-8c353b675061.json")
 
 ui <-  dashboardPage(
   
