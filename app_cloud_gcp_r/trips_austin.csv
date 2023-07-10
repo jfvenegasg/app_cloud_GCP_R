@@ -1,101 +1,101 @@
-"subscriber_type","bikeid","start_time","start_station_name","end_station_name","duration_minutes"
-"223","classic",2015-03-07 09:27:43,"6th/West","Stolen",250
-"890","classic",2015-03-14 02:12:17,"6th/Trinity","Stolen",29
-"398","classic",2015-06-20 04:48:27,"6th/Trinity","Stolen",1687
-"124","classic",2014-10-04 21:51:04,"6th/Trinity","Stolen",5089
-"127","classic",2015-10-10 19:32:38,"Zilker Park","Stolen",3632
-"277","classic",2015-10-02 22:49:06,"2nd/Congress","Stolen",8
-"439","classic",2015-11-01 02:02:28,"8th/Congress","Stolen",6609
-"113","classic",2015-05-28 12:23:37,"8th/Congress","Stolen",29
-"867","classic",2015-05-24 16:22:57,"Rainey/Davis","Stolen",5566
-"661","classic",2015-02-21 15:54:56,"Plaza Saltillo","Stolen",262
-"875","classic",2015-02-21 13:33:16,"Waller & 6th St.","Stolen",412
-"327","classic",2016-09-02 06:37:15,"Trinity & 6th Street","Stolen",6118
-"122","classic",2016-09-02 09:00:56,"Trinity & 6th Street","Stolen",5974
-"104","classic",2015-06-03 20:27:13,"Barton Springs/Kinney","Stolen",29
-"488","classic",2015-01-25 03:09:23,"ACC - Rio Grande & 12th","Stolen",3193
-"135","classic",2017-02-26 14:32:45,"Pfluger Bridge @ W 2nd Street","Stolen",1404
-"201","classic",2015-07-16 03:01:16,"Guadalupe/West Mall @ University Co-op","Stolen",1813
-"578","classic",2017-01-27 01:35:26,"Convention Center / 4th St. @ MetroRail","Stolen",5189
-"393","classic",2017-01-28 04:57:28,"State Capitol Visitors Garage @ San Jacinto & 12th","Stolen",4833
-"18329","electric",2022-05-12 16:50:03,"28th/Rio","28th/Rio",40
-"19678","electric",2022-10-01 23:10:57,"28th/Rio","28th/Rio",16
-"21668","electric",2022-06-27 14:14:59,"28th/Rio","28th/Rio",46
-"23251","electric",2022-06-08 17:00:32,"28th/Rio","28th/Rio",44
-"21709","electric",2022-09-18 19:29:29,"28th/Rio","28th/Rio",49
-"21422","electric",2022-07-27 16:53:16,"28th/Rio","28th/Rio",15
-"21680","electric",2022-07-07 09:33:50,"28th/Rio","28th/Rio",41
-"2034","classic",2022-06-21 16:27:28,"28th/Rio","28th/Rio",15
-"21676","electric",2022-06-16 19:14:56,"28th/Rio","28th/Rio",18
-"610","classic",2022-06-19 16:11:45,"28th/Rio","28th/Rio",1133
-"21723","electric",2022-06-06 19:59:43,"28th/Rio","28th/Rio",2
-"19239","electric",2022-06-11 11:31:19,"28th/Rio","28th/Rio",37
-"19160","electric",2022-06-02 23:33:54,"28th/Rio","28th/Rio",47
-"21543","electric",2022-06-10 17:02:10,"28th/Rio","28th/Rio",39
-"19251","electric",2022-06-11 20:18:44,"28th/Rio","28th/Rio",47
-"21676","electric",2022-06-12 14:46:38,"28th/Rio","28th/Rio",42
-"16337","electric",2022-06-03 17:46:50,"28th/Rio","28th/Rio",25
-"21823","electric",2022-06-16 12:59:22,"28th/Rio","28th/Rio",31
-"19177","electric",2022-06-19 19:34:58,"28th/Rio","28th/Rio",36
-"19177","electric",2022-06-19 19:08:46,"28th/Rio","28th/Rio",26
-"23271","electric",2022-06-22 13:33:50,"28th/Rio","28th/Rio",90
-"18181","electric",2022-06-16 15:43:06,"28th/Rio","28th/Rio",76
-"19955","electric",2022-06-15 14:06:39,"28th/Rio","28th/Rio",51
-"19418","electric",2022-06-10 10:47:22,"28th/Rio","28th/Rio",61
-"19608","electric",2022-06-25 17:41:33,"28th/Rio","28th/Rio",53
-"19955","electric",2022-06-16 09:13:09,"28th/Rio","28th/Rio",47
-"21800","electric",2022-06-20 09:28:47,"28th/Rio","28th/Rio",35
-"19165","electric",2022-06-30 18:46:43,"28th/Rio","28th/Rio",68
-"19552","electric",2022-06-17 22:33:56,"28th/Rio","28th/Rio",66
-"16845","electric",2022-06-29 14:07:32,"28th/Rio","28th/Rio",35
-"16828","electric",2022-06-20 13:50:27,"28th/Rio","28th/Rio",51
-"16845","electric",2022-06-29 14:43:19,"28th/Rio","28th/Rio",54
-"21668","electric",2022-06-27 16:52:34,"28th/Rio","28th/Rio",18
-"18971","electric",2022-06-25 15:32:51,"28th/Rio","28th/Rio",31
-"19165","electric",2022-06-30 20:02:32,"28th/Rio","28th/Rio",75
-"21728","electric",2022-06-29 01:36:24,"28th/Rio","28th/Rio",20
-"21650","electric",2022-06-17 17:09:04,"28th/Rio","28th/Rio",950
-"21553","electric",2022-06-17 17:57:01,"28th/Rio","28th/Rio",38
-"21467","electric",2022-06-12 22:03:18,"28th/Rio","28th/Rio",8
-"529","classic",2022-06-12 23:27:31,"28th/Rio","28th/Rio",9
-"21699","electric",2022-06-13 22:01:45,"28th/Rio","28th/Rio",12
-"19479","electric",2022-06-09 13:27:30,"28th/Rio","28th/Rio",46
-"19479","electric",2022-06-09 14:55:48,"28th/Rio","28th/Rio",11
-"21422","electric",2022-06-09 17:15:23,"28th/Rio","28th/Rio",35
-"19869","electric",2022-06-10 20:35:25,"28th/Rio","28th/Rio",46
-"19869","electric",2022-06-10 21:55:10,"28th/Rio","28th/Rio",22
-"19480","electric",2022-06-02 18:27:40,"28th/Rio","28th/Rio",9
-"21628","electric",2022-06-02 22:03:08,"28th/Rio","28th/Rio",15
-"21514","electric",2022-06-03 06:17:17,"28th/Rio","28th/Rio",17
-"16456","electric",2022-06-04 18:21:16,"28th/Rio","28th/Rio",19
-"16845","electric",2022-06-28 19:53:46,"28th/Rio","28th/Rio",50
-"21707","electric",2022-06-04 18:51:05,"28th/Rio","28th/Rio",16
-"21699","electric",2022-06-09 16:29:41,"28th/Rio","28th/Rio",44
-"21543","electric",2022-06-10 17:42:10,"28th/Rio","28th/Rio",38
-"21699","electric",2022-06-13 20:42:15,"28th/Rio","28th/Rio",41
-"19194","electric",2022-06-18 09:43:24,"28th/Rio","28th/Rio",37
-"21739","electric",2022-06-21 19:18:34,"28th/Rio","28th/Rio",20
-"19706","electric",2022-06-23 16:44:10,"28th/Rio","28th/Rio",13
-"21468","electric",2022-06-23 18:56:36,"28th/Rio","28th/Rio",37
-"16337","electric",2022-06-03 17:00:07,"28th/Rio","28th/Rio",45
-"19224","electric",2022-06-03 21:30:56,"28th/Rio","28th/Rio",30
-"16946","electric",2022-06-04 18:01:07,"28th/Rio","28th/Rio",14
-"22567","electric",2022-06-08 17:18:17,"28th/Rio","28th/Rio",7
-"21543","electric",2022-06-10 16:17:19,"28th/Rio","28th/Rio",44
-"19869","electric",2022-06-10 21:22:30,"28th/Rio","28th/Rio",32
-"21729","electric",2022-06-11 10:32:00,"28th/Rio","28th/Rio",60
-"529","classic",2022-06-11 18:43:26,"28th/Rio","28th/Rio",15
-"21553","electric",2022-06-17 21:40:14,"28th/Rio","28th/Rio",10
-"21767","electric",2022-06-18 00:01:42,"28th/Rio","28th/Rio",2
-"19163","electric",2022-06-18 15:17:39,"28th/Rio","28th/Rio",48
-"16277","electric",2022-06-16 16:39:34,"28th/Rio","28th/Rio",27
-"19706","electric",2022-06-23 16:16:11,"28th/Rio","28th/Rio",17
-"19437","electric",2022-06-24 10:45:17,"28th/Rio","28th/Rio",125
-"23251","electric",2022-06-14 17:03:23,"28th/Rio","28th/Rio",8
-"19177","electric",2022-06-19 18:55:02,"28th/Rio","28th/Rio",13
-"17019","electric",2022-06-13 18:16:06,"28th/Rio","28th/Rio",45
-"21699","electric",2022-06-13 21:24:40,"28th/Rio","28th/Rio",37
-"19160","electric",2022-06-02 23:11:48,"28th/Rio","28th/Rio",2
-"21628","electric",2022-06-03 10:15:43,"28th/Rio","28th/Rio",98
-"21575","electric",2022-06-03 17:53:16,"28th/Rio","28th/Rio",4
-"21628","electric",2022-06-04 12:52:03,"28th/Rio","28th/Rio",38
+"trip_id","subscriber_type","bikeid","start_time","start_station_id","start_station_name","end_station_id","end_station_name","duration_minutes"
+"24 Hour Walk Up Pass","223","classic",2015-03-07 09:27:43,2537,"6th/West",NA,"Stolen",250
+"24 Hour Walk Up Pass","890","classic",2015-03-14 02:12:17,2565,"6th/Trinity",NA,"Stolen",29
+"24 Hour Walk Up Pass","398","classic",2015-06-20 04:48:27,2565,"6th/Trinity",NA,"Stolen",1687
+"24 Hour Walk Up Pass","124","classic",2014-10-04 21:51:04,2565,"6th/Trinity",NA,"Stolen",5089
+"24 Hour Walk Up Pass","127","classic",2015-10-10 19:32:38,2574,"Zilker Park",NA,"Stolen",3632
+"Local365","277","classic",2015-10-02 22:49:06,2494,"2nd/Congress",NA,"Stolen",8
+"24 Hour Walk Up Pass","439","classic",2015-11-01 02:02:28,2496,"8th/Congress",NA,"Stolen",6609
+"Local31","113","classic",2015-05-28 12:23:37,2496,"8th/Congress",NA,"Stolen",29
+"24 Hour Walk Up Pass","867","classic",2015-05-24 16:22:57,2563,"Rainey/Davis",NA,"Stolen",5566
+"Explorer","661","classic",2015-02-21 15:54:56,2542,"Plaza Saltillo",NA,"Stolen",262
+"24 Hour Walk Up Pass","875","classic",2015-02-21 13:33:16,2536,"Waller & 6th St.",NA,"Stolen",412
+"Walk Up","327","classic",2016-09-02 06:37:15,2565,"Trinity & 6th Street",NA,"Stolen",6118
+"Walk Up","122","classic",2016-09-02 09:00:56,2565,"Trinity & 6th Street",NA,"Stolen",5974
+"Founding Member","104","classic",2015-06-03 20:27:13,2711,"Barton Springs/Kinney",NA,"Stolen",29
+"24 Hour Walk Up Pass","488","classic",2015-01-25 03:09:23,2545,"ACC - Rio Grande & 12th",NA,"Stolen",3193
+"Walk Up","135","classic",2017-02-26 14:32:45,2566,"Pfluger Bridge @ W 2nd Street",NA,"Stolen",1404
+"24 Hour Walk Up Pass","201","classic",2015-07-16 03:01:16,2548,"Guadalupe/West Mall @ University Co-op",NA,"Stolen",1813
+"Walk Up","578","classic",2017-01-27 01:35:26,2498,"Convention Center / 4th St. @ MetroRail",NA,"Stolen",5189
+"Walk Up","393","classic",2017-01-28 04:57:28,2561,"State Capitol Visitors Garage @ San Jacinto & 12th",NA,"Stolen",4833
+"Local31","18329","electric",2022-05-12 16:50:03,7189,"28th/Rio","7189","28th/Rio",40
+"Student Membership","19678","electric",2022-10-01 23:10:57,7189,"28th/Rio","7189","28th/Rio",16
+"Local31","21668","electric",2022-06-27 14:14:59,7189,"28th/Rio","7189","28th/Rio",46
+"Local31","23251","electric",2022-06-08 17:00:32,7189,"28th/Rio","7189","28th/Rio",44
+"Explorer","21709","electric",2022-09-18 19:29:29,7189,"28th/Rio","7189","28th/Rio",49
+"Student Membership","21422","electric",2022-07-27 16:53:16,7189,"28th/Rio","7189","28th/Rio",15
+"Explorer","21680","electric",2022-07-07 09:33:50,7189,"28th/Rio","7189","28th/Rio",41
+"Student Membership","2034","classic",2022-06-21 16:27:28,7189,"28th/Rio","7189","28th/Rio",15
+"Student Membership","21676","electric",2022-06-16 19:14:56,7189,"28th/Rio","7189","28th/Rio",18
+"Student Membership","610","classic",2022-06-19 16:11:45,7189,"28th/Rio","7189","28th/Rio",1133
+"Student Membership","21723","electric",2022-06-06 19:59:43,7189,"28th/Rio","7189","28th/Rio",2
+"Student Membership","19239","electric",2022-06-11 11:31:19,7189,"28th/Rio","7189","28th/Rio",37
+"Local31","19160","electric",2022-06-02 23:33:54,7189,"28th/Rio","7189","28th/Rio",47
+"Local31","21543","electric",2022-06-10 17:02:10,7189,"28th/Rio","7189","28th/Rio",39
+"Local31","19251","electric",2022-06-11 20:18:44,7189,"28th/Rio","7189","28th/Rio",47
+"Local31","21676","electric",2022-06-12 14:46:38,7189,"28th/Rio","7189","28th/Rio",42
+"Local31","16337","electric",2022-06-03 17:46:50,7189,"28th/Rio","7189","28th/Rio",25
+"Local31","21823","electric",2022-06-16 12:59:22,7189,"28th/Rio","7189","28th/Rio",31
+"Local31","19177","electric",2022-06-19 19:34:58,7189,"28th/Rio","7189","28th/Rio",36
+"Local31","19177","electric",2022-06-19 19:08:46,7189,"28th/Rio","7189","28th/Rio",26
+"Local31","23271","electric",2022-06-22 13:33:50,7189,"28th/Rio","7189","28th/Rio",90
+"Local31","18181","electric",2022-06-16 15:43:06,7189,"28th/Rio","7189","28th/Rio",76
+"Local31","19955","electric",2022-06-15 14:06:39,7189,"28th/Rio","7189","28th/Rio",51
+"Local31","19418","electric",2022-06-10 10:47:22,7189,"28th/Rio","7189","28th/Rio",61
+"Local31","19608","electric",2022-06-25 17:41:33,7189,"28th/Rio","7189","28th/Rio",53
+"Student Membership","19955","electric",2022-06-16 09:13:09,7189,"28th/Rio","7189","28th/Rio",47
+"Student Membership","21800","electric",2022-06-20 09:28:47,7189,"28th/Rio","7189","28th/Rio",35
+"Local31","19165","electric",2022-06-30 18:46:43,7189,"28th/Rio","7189","28th/Rio",68
+"Explorer","19552","electric",2022-06-17 22:33:56,7189,"28th/Rio","7189","28th/Rio",66
+"Local31","16845","electric",2022-06-29 14:07:32,7189,"28th/Rio","7189","28th/Rio",35
+"Local31","16828","electric",2022-06-20 13:50:27,7189,"28th/Rio","7189","28th/Rio",51
+"Local31","16845","electric",2022-06-29 14:43:19,7189,"28th/Rio","7189","28th/Rio",54
+"Local31","21668","electric",2022-06-27 16:52:34,7189,"28th/Rio","7189","28th/Rio",18
+"Local31","18971","electric",2022-06-25 15:32:51,7189,"28th/Rio","7189","28th/Rio",31
+"Local31","19165","electric",2022-06-30 20:02:32,7189,"28th/Rio","7189","28th/Rio",75
+"Student Membership","21728","electric",2022-06-29 01:36:24,7189,"28th/Rio","7189","28th/Rio",20
+"Student Membership","21650","electric",2022-06-17 17:09:04,7189,"28th/Rio","7189","28th/Rio",950
+"Local31","21553","electric",2022-06-17 17:57:01,7189,"28th/Rio","7189","28th/Rio",38
+"Student Membership","21467","electric",2022-06-12 22:03:18,7189,"28th/Rio","7189","28th/Rio",8
+"Student Membership","529","classic",2022-06-12 23:27:31,7189,"28th/Rio","7189","28th/Rio",9
+"Local31","21699","electric",2022-06-13 22:01:45,7189,"28th/Rio","7189","28th/Rio",12
+"Local31","19479","electric",2022-06-09 13:27:30,7189,"28th/Rio","7189","28th/Rio",46
+"Student Membership","19479","electric",2022-06-09 14:55:48,7189,"28th/Rio","7189","28th/Rio",11
+"Local31","21422","electric",2022-06-09 17:15:23,7189,"28th/Rio","7189","28th/Rio",35
+"Local31","19869","electric",2022-06-10 20:35:25,7189,"28th/Rio","7189","28th/Rio",46
+"Local31","19869","electric",2022-06-10 21:55:10,7189,"28th/Rio","7189","28th/Rio",22
+"Pay-as-you-ride","19480","electric",2022-06-02 18:27:40,7189,"28th/Rio","7189","28th/Rio",9
+"Pay-as-you-ride","21628","electric",2022-06-02 22:03:08,7189,"28th/Rio","7189","28th/Rio",15
+"Student Membership","21514","electric",2022-06-03 06:17:17,7189,"28th/Rio","7189","28th/Rio",17
+"Local31","16456","electric",2022-06-04 18:21:16,7189,"28th/Rio","7189","28th/Rio",19
+"Student Membership","16845","electric",2022-06-28 19:53:46,7189,"28th/Rio","7189","28th/Rio",50
+"Local31","21707","electric",2022-06-04 18:51:05,7189,"28th/Rio","7189","28th/Rio",16
+"Local31","21699","electric",2022-06-09 16:29:41,7189,"28th/Rio","7189","28th/Rio",44
+"Local31","21543","electric",2022-06-10 17:42:10,7189,"28th/Rio","7189","28th/Rio",38
+"Local31","21699","electric",2022-06-13 20:42:15,7189,"28th/Rio","7189","28th/Rio",41
+"Student Membership","19194","electric",2022-06-18 09:43:24,7189,"28th/Rio","7189","28th/Rio",37
+"Local365","21739","electric",2022-06-21 19:18:34,7189,"28th/Rio","7189","28th/Rio",20
+"Student Membership","19706","electric",2022-06-23 16:44:10,7189,"28th/Rio","7189","28th/Rio",13
+"Student Membership","21468","electric",2022-06-23 18:56:36,7189,"28th/Rio","7189","28th/Rio",37
+"Local31","16337","electric",2022-06-03 17:00:07,7189,"28th/Rio","7189","28th/Rio",45
+"Local31","19224","electric",2022-06-03 21:30:56,7189,"28th/Rio","7189","28th/Rio",30
+"Local31","16946","electric",2022-06-04 18:01:07,7189,"28th/Rio","7189","28th/Rio",14
+"Student Membership","22567","electric",2022-06-08 17:18:17,7189,"28th/Rio","7189","28th/Rio",7
+"Local31","21543","electric",2022-06-10 16:17:19,7189,"28th/Rio","7189","28th/Rio",44
+"Local31","19869","electric",2022-06-10 21:22:30,7189,"28th/Rio","7189","28th/Rio",32
+"Student Membership","21729","electric",2022-06-11 10:32:00,7189,"28th/Rio","7189","28th/Rio",60
+"Student Membership","529","classic",2022-06-11 18:43:26,7189,"28th/Rio","7189","28th/Rio",15
+"Local31","21553","electric",2022-06-17 21:40:14,7189,"28th/Rio","7189","28th/Rio",10
+"3-Day Weekender","21767","electric",2022-06-18 00:01:42,7189,"28th/Rio","7189","28th/Rio",2
+"Local31","19163","electric",2022-06-18 15:17:39,7189,"28th/Rio","7189","28th/Rio",48
+"Local31","16277","electric",2022-06-16 16:39:34,7189,"28th/Rio","7189","28th/Rio",27
+"Student Membership","19706","electric",2022-06-23 16:16:11,7189,"28th/Rio","7189","28th/Rio",17
+"Student Membership","19437","electric",2022-06-24 10:45:17,7189,"28th/Rio","7189","28th/Rio",125
+"Local31","23251","electric",2022-06-14 17:03:23,7189,"28th/Rio","7189","28th/Rio",8
+"Local31","19177","electric",2022-06-19 18:55:02,7189,"28th/Rio","7189","28th/Rio",13
+"Local31","17019","electric",2022-06-13 18:16:06,7189,"28th/Rio","7189","28th/Rio",45
+"Local31","21699","electric",2022-06-13 21:24:40,7189,"28th/Rio","7189","28th/Rio",37
+"Local31","19160","electric",2022-06-02 23:11:48,7189,"28th/Rio","7189","28th/Rio",2
+"Student Membership","21628","electric",2022-06-03 10:15:43,7189,"28th/Rio","7189","28th/Rio",98
+"Pay-as-you-ride","21575","electric",2022-06-03 17:53:16,7189,"28th/Rio","7189","28th/Rio",4
+"Student Membership","21628","electric",2022-06-04 12:52:03,7189,"28th/Rio","7189","28th/Rio",38

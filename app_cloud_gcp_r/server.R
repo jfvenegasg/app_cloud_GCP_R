@@ -12,7 +12,7 @@ library(shiny)
 function(input, output, session) {
   project_id <- "apps-392022"
   
-  sql<-"SELECT subscriber_type,bikeid,start_time,start_station_name,end_station_name,duration_minutes from `bigquery-public-data.austin_bikeshare.bikeshare_trips` LIMIT 100"
+  sql<-"SELECT * from `bigquery-public-data.austin_bikeshare.bikeshare_trips` LIMIT 100"
   
   respuesta <- reactiveValues(data=NULL)
   
@@ -23,13 +23,15 @@ function(input, output, session) {
   })
   
   observeEvent(input$boton_carga, {
-    respuesta$datos<-read.csv(file = "app_cloud_gcp_r/trips_austin.csv")
-    respuesta<-read.csv(file = "app_cloud_gcp_r/trips_austin.csv")
+    respuesta$datos<-read.csv(file = "trips_austin.csv")
   })
   
-  output$datos_bigquery<-renderDataTable({
-    datatable(respuesta$datos)
-    },options=list(pageLength =10))
+  output$datos_bigquery<-renderDataTable(
+    datatable(respuesta$datos,escape=FALSE,
+              options=list(
+                pageLength =5,
+                 columnDefs = list(list(targets = 9, width = '200px')),
+                   scrollX = TRUE)))
   
   #Aca se genera el grafico,de acuerdo a los datos extraidos en la consulta SQL.
   #El grafico muestra en el eje x el tipo de suscriptor y en el eje y la duracion en minutos de los viajes
@@ -38,11 +40,11 @@ function(input, output, session) {
       
     }else{
       datos_graficos <- respuesta$datos %>%
-        group_by(subscriber_type) %>%
+        group_by(trip_id) %>%
         summarise(duration_minutes = sum(duration_minutes))
       
       datos_graficos |>
-        echarts4r::e_chart(subscriber_type) |>
+        echarts4r::e_chart(trip_id) |>
         echarts4r::e_bar(duration_minutes) |>
         echarts4r::e_theme("walden")   |>
         echarts4r::e_tooltip()

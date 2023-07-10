@@ -56,9 +56,9 @@ ui <-  dashboardPage(
 
       tabItem(tabName = "menu2",
               fluidRow(actionButton(inputId = "boton_descarga",label =  "Descarga"),actionButton(inputId = "boton_carga",label =  "Carga")),
-              fluidRow(width=12,box(dataTableOutput("datos_bigquery",width = "100%"),
+              fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery",width = "100%",height = "600px"),
                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
-                               box(title = i18n$t("Datos de set de datos 1"),echarts4rOutput("grafico_bigquery",width = "100%"),
+                               box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery",width = "100%",height = "600px"),
                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
                                 
               )
