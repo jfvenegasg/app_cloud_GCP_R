@@ -16,11 +16,16 @@ function(input, output, session) {
   
   respuesta <- reactiveValues(data=NULL)
   
-  observeEvent(input$boton, {
+  observeEvent(input$boton_descarga, {
     consulta <- bigrquery::bq_project_query(project_id, sql)
     respuesta$datos <-bigrquery::bq_table_download(consulta,n_max = 100)
+    write.csv(x =respuesta$datos,file = "trips_austin.csv",row.names = FALSE)
   })
-
+  
+  observeEvent(input$boton_carga, {
+    respuesta$datos<-read.csv(file = "app_cloud_gcp_r/trips_austin.csv")
+    respuesta<-read.csv(file = "app_cloud_gcp_r/trips_austin.csv")
+  })
   
   output$datos_bigquery<-renderDataTable({
     datatable(respuesta$datos)
