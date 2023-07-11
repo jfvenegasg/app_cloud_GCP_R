@@ -39,7 +39,9 @@ ui <-  dashboardPage(
                               icon=icon("laptop-medical"),
                               selected = TRUE),
                      
-                     bs4Dash::menuItem(i18n$t("Analisis de datos Bigquery"),tabName="menu2",
+                     bs4Dash::menuItem(i18n$t("Analisis datos Austin Trips"),tabName="menu2",
+                                       icon=icon("check-square")),
+                     bs4Dash::menuItem(i18n$t("Analisis datos Austin Crime"),tabName="menu3",
                                        icon=icon("check-square")),
                      selectInput(inputId = "idioma", label = "Elige idioma", choices = c("Spanish" = "es","English" = "en"))
                      )),
@@ -55,13 +57,21 @@ ui <-  dashboardPage(
       ), 
 
       tabItem(tabName = "menu2",
-              fluidRow(actionButton(inputId = "boton_descarga",label =  "Descarga"),actionButton(inputId = "boton_carga",label =  "Carga")),
-              fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery",width = "100%",height = "600px"),
+              fluidRow(actionButton(inputId = "boton_descarga_at",label =  "Descarga"),actionButton(inputId = "boton_carga_at",label =  "Carga")),
+              fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery_at",width = "100%",height = "600px"),
                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
-                               box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery",width = "100%",height = "600px"),
+                               box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery_at",width = "100%",height = "600px"),
                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
                                 
-              )
+              ),
+      tabItem(tabName = "menu3",
+              fluidRow(actionButton(inputId = "boton_descarga_ac",label =  "Descarga"),actionButton(inputId = "boton_carga_ac",label =  "Carga")),
+              fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery_ac",width = "100%",height = "600px"),
+                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
+                       box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery_ac",width = "100%",height = "600px"),
+                           width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
+
+      )
     )
     
   ))
