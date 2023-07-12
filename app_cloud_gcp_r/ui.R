@@ -43,6 +43,8 @@ ui <-  dashboardPage(
                                        icon=icon("check-square")),
                      bs4Dash::menuItem(i18n$t("Analisis datos Austin Crime"),tabName="menu3",
                                        icon=icon("check-square")),
+                     bs4Dash::menuItem(i18n$t("Analisis datos Austin Waste"),tabName="menu4",
+                                       icon=icon("check-square")),
                      selectInput(inputId = "idioma", label = "Elige idioma", choices = c("Spanish" = "es","English" = "en"))
                      )),
   dashboardBody(
@@ -71,6 +73,14 @@ ui <-  dashboardPage(
                        box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery_ac",width = "100%",height = "600px"),
                            width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
 
+      ),
+      tabItem(tabName = "menu4",
+              fluidRow(actionButton(inputId = "boton_descarga_aw",label =  "Descarga"),actionButton(inputId = "boton_carga_aw",label =  "Carga")),
+              fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery_aw",width = "100%",height = "600px"),
+                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
+                       box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery_aw",width = "100%",height = "600px"),
+                           width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
+              
       )
     )
     

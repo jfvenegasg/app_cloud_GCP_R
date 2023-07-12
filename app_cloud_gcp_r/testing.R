@@ -1,17 +1,17 @@
 project_id <- "apps-392022"
-
-sql<-"SELECT * from `bigquery-public-data.austin_bikeshare.bikeshare_trips` LIMIT 100"
-
+sql<-"SELECT load_id,load_type,load_weight FROM `bigquery-public-data.austin_waste.waste_and_diversion`"
 consulta <- bigrquery::bq_project_query(project_id, sql)
-respuesta <-bigrquery::bq_table_download(consulta,n_max = 100)
-write.csv(x =respuesta$datos,file = "trips_austin.csv",row.names = FALSE)
+respuesta_aw <-bigrquery::bq_table_download(consulta)
+write.csv(x =respuesta_aw$datos,file = "waste_austin.csv",row.names = FALSE)
 
-datos_graficos <- crime_austin %>%
-  group_by(description) %>%
-  summarise(total = n())
+
+datos_graficos <- respuesta_aw %>%
+  group_by(load_type) %>%
+  summarise(total = sum(load_id)) %>%
+  arrange(desc(total))
 
 datos_graficos |>
-  echarts4r::e_chart(description) |>
+  echarts4r::e_chart(load_type) |>
   echarts4r::e_bar(total) |>
   echarts4r::e_theme("walden")   |>
   echarts4r::e_tooltip()
