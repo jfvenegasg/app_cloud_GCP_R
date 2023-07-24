@@ -139,4 +139,47 @@ function(input, output, session) {
         echarts4r::e_tooltip()
     }
   })
+  
+  #### Modulo analisis de datos Austin Incidents ####
+  
+  respuesta_in_2016 <- reactiveValues(data=NULL)
+  
+  observeEvent(input$boton_descarga_in_2016, {
+    project_id <- "apps-392022"
+    sql<-"SELECT descript,date,time,address FROM `bigquery-public-data.austin_incidents.incidents_2016`"
+    consulta <- bigrquery::bq_project_query(project_id, sql)
+    respuesta_in_2016$datos <-bigrquery::bq_table_download(consulta)
+    write.csv(x =respuesta_in_2016$datos,file = "incident_2016_austin.csv",row.names = FALSE)
+  })
+  
+  observeEvent(input$boton_carga_in_2016, {
+    respuesta_in_2016$datos<-read.csv(file = "incident_2016_austin.csv")
+  })
+  
+  output$datos_bigquery_in_2016<-renderDataTable(
+    datatable(respuesta_in_2016$datos,escape=FALSE,
+              options=list(
+                pageLength =5,
+                columnDefs = list(list(targets = 3, width = '200px')),
+                scrollX = TRUE))
+  )
+  
+  #Aca se genera el grafico,de acuerdo a los datos extraidos en la consulta SQL.
+  #El grafico muestra en el eje x el tipo de suscriptor y en el eje y la duracion en minutos de los viajes
+  output$grafico_bigquery_in_2016<-renderEcharts4r({
+    if(is.null(respuesta_in_2016$datos)==TRUE){
+      
+    }else{
+      datos_graficos <- respuesta_in_2016$datos %>%
+        group_by(load_type) %>%
+        summarise(total = sum(load_id)) %>%
+        arrange(desc(total))
+      
+      datos_graficos |>
+        echarts4r::e_chart(load_type) |>
+        echarts4r::e_bar(total) |>
+        echarts4r::e_theme("walden")   |>
+        echarts4r::e_tooltip()
+    }
+  })
 }

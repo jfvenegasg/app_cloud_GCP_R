@@ -45,6 +45,8 @@ ui <-  dashboardPage(
                                        icon=icon("check-square")),
                      bs4Dash::menuItem(i18n$t("Analisis datos Austin Waste"),tabName="menu4",
                                        icon=icon("check-square")),
+                     bs4Dash::menuItem(i18n$t("Analisis datos Incident 2016"),tabName="menu5",
+                                       icon=icon("check-square")),
                      selectInput(inputId = "idioma", label = "Elige idioma", choices = c("Spanish" = "es","English" = "en"))
                      )),
   dashboardBody(
@@ -79,6 +81,14 @@ ui <-  dashboardPage(
               fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery_aw",width = "100%",height = "600px"),
                                     width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
                        box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery_aw",width = "100%",height = "600px"),
+                           width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
+              
+      ),
+      tabItem(tabName = "menu5",
+              fluidRow(actionButton(inputId = "boton_descarga_in_2016",label =  "Descarga"),actionButton(inputId = "boton_carga_in_2016",label =  "Carga")),
+              fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery_in_2016",width = "100%",height = "600px"),
+                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
+                       box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery_in_2016",width = "100%",height = "600px"),
                            width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
               
       )
