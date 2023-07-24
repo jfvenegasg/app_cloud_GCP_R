@@ -73,7 +73,7 @@ function(input, output, session) {
   output$datos_bigquery_ac<-renderDataTable(
     datatable(respuesta_ac$datos,escape=FALSE,
               options=list(
-                pageLength =5,
+                pageLength =10,
                 columnDefs = list(list(targets = 6, width = '200px')),
                 scrollX = TRUE))
   )
@@ -116,7 +116,7 @@ function(input, output, session) {
   output$datos_bigquery_aw<-renderDataTable(
     datatable(respuesta_aw$datos,escape=FALSE,
               options=list(
-                pageLength =5,
+                pageLength =10,
                 columnDefs = list(list(targets = 3, width = '200px')),
                 scrollX = TRUE))
   )
@@ -159,7 +159,7 @@ function(input, output, session) {
   output$datos_bigquery_in_2016<-renderDataTable(
     datatable(respuesta_in_2016$datos,escape=FALSE,
               options=list(
-                pageLength =5,
+                pageLength =10,
                 columnDefs = list(list(targets = 3, width = '200px')),
                 scrollX = TRUE))
   )
@@ -171,12 +171,12 @@ function(input, output, session) {
       
     }else{
       datos_graficos <- respuesta_in_2016$datos %>%
-        group_by(load_type) %>%
-        summarise(total = sum(load_id)) %>%
+        group_by(descript) %>%
+        summarise(total = n()) %>%
         arrange(desc(total))
       
       datos_graficos |>
-        echarts4r::e_chart(load_type) |>
+        echarts4r::e_chart(descript) |>
         echarts4r::e_bar(total) |>
         echarts4r::e_theme("walden")   |>
         echarts4r::e_tooltip()
