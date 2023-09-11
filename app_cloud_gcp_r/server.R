@@ -54,6 +54,30 @@ function(input, output, session) {
     }
   })
   
+  # Grafico de torta para trip id
+  output$grafico_torta_trip_id_at<-renderEcharts4r({
+    if(is.null(respuesta_at$datos)==TRUE){
+      
+    }else{
+      datos_graficos<-respuesta_at$datos %>% group_by(trip_id)  %>%
+        summarise(duration_minutes = sum(duration_minutes)) %>%
+        arrange(desc(duration_minutes))
+      
+      porcentajes <- datos_graficos %>%
+        summarise(percentage = (duration_minutes / sum(duration_minutes)) * 100)
+      
+      datos<-cbind(datos_graficos,porcentajes)
+      
+      
+      datos |>
+        echarts4r::e_chart(trip_id) |>
+        echarts4r::e_pie(percentage) |>
+        echarts4r::e_theme("walden")   |>
+        echarts4r::e_tooltip()
+    }
+  })
+  
+  
   #### Modulo analisis de datos Austin Crimes ####
   
   respuesta_ac <- reactiveValues(data=NULL)

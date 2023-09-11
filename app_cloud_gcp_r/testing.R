@@ -15,3 +15,15 @@ datos_graficos |>
   echarts4r::e_bar(total) |>
   echarts4r::e_theme("walden")   |>
   echarts4r::e_tooltip()
+
+respuesta_at<-read.csv(file = "app_cloud_gcp_r/trips_austin.csv")
+
+datos_graficos<-respuesta_at %>% group_by(trip_id)  %>%
+  summarise(duration_minutes = sum(duration_minutes)) %>%
+  arrange(desc(duration_minutes))
+
+porcentajes <- datos_graficos %>%
+  summarise(percentage = (duration_minutes / sum(duration_minutes)) * 100)
+
+datos<-cbind(datos_graficos,porcentajes)
+

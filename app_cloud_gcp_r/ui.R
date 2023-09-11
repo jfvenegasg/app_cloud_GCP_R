@@ -65,7 +65,9 @@ ui <-  dashboardPage(
               fluidRow(width=12,box(title = "Datos",dataTableOutput("datos_bigquery_at",width = "100%",height = "600px"),
                                    width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
                                box(title = i18n$t("Grafico"),echarts4rOutput("grafico_bigquery_at",width = "100%",height = "600px"),
-                                   width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
+                                   width = 6,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2),
+                               box(title = i18n$t("Grafico"),echarts4rOutput("grafico_torta_trip_id_at",width = "100%",height = "600px"),
+                                   width = 12,status = "lightblue",headerBorder = FALSE,collapsible = FALSE,closable = FALSE,elevation = 2))
                                 
               ),
       tabItem(tabName = "menu3",
