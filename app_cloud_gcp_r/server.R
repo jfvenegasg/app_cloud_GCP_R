@@ -17,7 +17,7 @@ function(input, output, session) {
   
   observeEvent(input$boton_descarga_at, {
     project_id <- "apps-392022"
-    sql<-"SELECT * from `bigquery-public-data.austin_bikeshare.bikeshare_trips`"
+    sql<-"SELECT * from `bigquery-public-data.austin_bikeshare.bikeshare_trips` limit 100"
     consulta <- bigrquery::bq_project_query(project_id, sql)
     respuesta_at$datos <-bigrquery::bq_table_download(consulta)
     write.csv(x =respuesta_at$datos,file = "trips_austin.csv",row.names = FALSE)
@@ -42,12 +42,12 @@ function(input, output, session) {
       
     }else{
       datos_graficos <- respuesta_at$datos %>%
-        group_by(trip_id) %>%
+        group_by(subscriber_type) %>%
         summarise(duration_minutes = sum(duration_minutes)) %>%
         arrange(desc(duration_minutes))
       
       datos_graficos |>
-        echarts4r::e_chart(trip_id) |>
+        echarts4r::e_chart(subscriber_type) |>
         echarts4r::e_bar(duration_minutes) |>
         echarts4r::e_theme("walden")   |>
         echarts4r::e_tooltip()
@@ -59,7 +59,7 @@ function(input, output, session) {
     if(is.null(respuesta_at$datos)==TRUE){
       
     }else{
-      datos_graficos<-respuesta_at$datos %>% group_by(trip_id)  %>%
+      datos_graficos<-respuesta_at$datos %>% group_by(subscriber_type)  %>%
         summarise(duration_minutes = sum(duration_minutes)) %>%
         arrange(desc(duration_minutes))
       
@@ -70,7 +70,7 @@ function(input, output, session) {
       
       
       datos |>
-        echarts4r::e_chart(trip_id) |>
+        echarts4r::e_chart(subscriber_type) |>
         echarts4r::e_pie(percentage) |>
         echarts4r::e_theme("walden")   |>
         echarts4r::e_tooltip()
